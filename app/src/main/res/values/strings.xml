@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PruebaTecnicaWhiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pokemon_name">Charmander</string>
+    <string name="tv_felicidad_base">Felicidad Base:</string>
+    <string name="tv_tasa_captura">Tasa de captura:</string>
+    <string name="tv_color">Color:</string>
+    <string name="tv_grupos_de_huevos">Grupos de huevos:</string>
+    <string name="btn_habilidades">Habilidades</string>
+    <string name="btn_linea_evolutiva">Linea evolutiva</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/pokemonFragment">
+
+    <fragment
+        android:id="@+id/pokemonFragment"
+        android:name="com.example.pruebatecnicawhiz.home.ui.pokemon.PokemonFragment"
+        android:label="fragment_pokemon"
+        tools:layout="@layout/fragment_pokemon" >
+        <action
+            android:id="@+id/action_pokemonFragment_to_pokemonSpeciesFragment"
+            app:destination="@id/pokemonSpeciesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonEvolutionaryLineFragment"
+        android:name="com.example.pruebatecnicawhiz.home.ui.pokemonEvolutionary.PokemonEvolutionaryLineFragment"
+        android:label="fragment_evolutionary_line"
+        tools:layout="@layout/fragment_evolutionary_line" >
+    </fragment>
+    <fragment
+        android:id="@+id/pokemonSkillsFragment"
+        android:name="com.example.pruebatecnicawhiz.home.ui.pokemonSkills.PokemonSkillsFragment"
+        android:label="fragment_pokemon_skills"
+        tools:layout="@layout/fragment_pokemon_skills" />
+    <fragment
+        android:id="@+id/pokemonSpeciesFragment"
+        android:name="com.example.pruebatecnicawhiz.home.ui.pokemonSpecies.PokemonSpeciesFragment"
+        android:label="fragment_pokemon_species"
+        tools:layout="@layout/fragment_pokemon_species" >
+        <action
+            android:id="@+id/action_pokemonSpeciesFragment_to_pokemonEvolutionaryLineFragment"
+            app:destination="@id/pokemonEvolutionaryLineFragment" />
+        <action
+            android:id="@+id/action_pokemonSpeciesFragment_to_pokemonSkillsFragment"
+            app:destination="@id/pokemonSkillsFragment" />
+    </fragment>
+</navigation>
